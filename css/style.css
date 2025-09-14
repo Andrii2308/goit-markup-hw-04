@@ -545,15 +545,17 @@ svg {
   flex-direction: row;
 align-items: baseline;
   justify-content: flex-start; /* блоки один за одним */
-  gap: 120px; /* відстань між блоками */
-  max-width: 1200px; /* по центру можна додати margin auto */
-  margin-right: 120px;
    margin: 0 auto;
+   width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 
 /* Лівий блок */
 .footer-box {
   max-width: 264px;
+    margin-right: 120px;
 }
 
 .footer-logo {
