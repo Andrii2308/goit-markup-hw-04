@@ -263,10 +263,16 @@ a {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: #05093a;
+  background-color: #4d5ae5;
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.social-link-card:hover,
+.social-link-card:focus {
+  background-color: #404bbf;
+}
+
 .icon-box-team:hover,
 .icon-box-team:focus {
   background-color: #404bbf;
@@ -282,6 +288,11 @@ a {
    display: flex; 
   align-items:center;
    justify-content: center;
+}
+svg {
+  fill: #f4f4fd;
+  width: 16;
+  height: 16;
 }
 
 .advantages-icon {
@@ -523,7 +534,7 @@ align-items: baseline;
   justify-content: flex-start; /* блоки один за одним */
   gap: 120px; /* відстань між блоками */
   max-width: 1200px; /* по центру можна додати margin auto */
-  margin: margin-right: 120px;
+  margin-right: 120px;
    margin: 0 auto;
 }
 
