@@ -519,12 +519,12 @@ a {
 .footer-container {
   display: flex;
   flex-direction: row;
-align-items: flex-start;
-
+align-items: baseline;
   justify-content: flex-start; /* блоки один за одним */
   gap: 120px; /* відстань між блоками */
   max-width: 1200px; /* по центру можна додати margin auto */
-  margin: 0 auto;
+  margin: margin-right: 120px;
+   margin: 0 auto;
 }
 
 /* Лівий блок */
@@ -594,7 +594,7 @@ align-items: flex-start;
 
 .social-linl:hover,
 .social-linl:focus {
-  background-color: #404bbf;
+  background-color: #31d0aa;
 }
 
 .footer-icon {
@@ -709,4 +709,5 @@ align-items: flex-start;
 svg {
   width: 16;
   height: 16;
-}
+} */
+ 
