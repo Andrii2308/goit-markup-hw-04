@@ -273,8 +273,8 @@ a {
   background-color: #404bbf;
 }
 
-.icon-box-team:hover,
-.icon-box-team:focus {
+.social-items-team:hover,
+.social-items-team:focus {
   background-color: #404bbf;
 }
 .icon-box {
@@ -373,7 +373,7 @@ svg {
   fill: #f4f4fd;
 }
 
-.icon-box-team {
+/*.icon-box-team {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -384,7 +384,7 @@ svg {
   justify-content: center;
   position: relative;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 .icon-box-footer {
   width: 40px;
@@ -423,6 +423,19 @@ svg {
   text-align: center;
   color: #434455;
   margin-bottom: 8px;
+}
+
+.social-items-team {
+   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+    fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-team {
