@@ -211,7 +211,7 @@ a {
   color: #fff;
   cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color:background-color #4d5ae5;
+  background-color: #4d5ae5;
 
   min-width: 169px;
   height: 56px;
@@ -220,7 +220,7 @@ a {
 }
 .order-service:hover,
 .order-service:focus {
-  background-color: #404bbf;
+  background: #404bbf;
 }
 .container.advant {
   margin: 0 auto;
@@ -256,6 +256,20 @@ a {
 }
 .advantages-item {
   width: calc((100% - 72px) / 4);
+}
+.social-link-card {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #05093a;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-box-team:hover,
+.icon-box-team:focus {
+  background-color: #404bbf;
 }
 .icon-box {
   border: 1px solid #8e8f99;
@@ -338,22 +352,43 @@ a {
 .social-linl {
   width: 100%;
   height: 100%;
+  
+
+}
+
+.team-links-icon {
+  width: 16px;
+  height: 16px;
+  fill: #f4f4fd;
+}
+
+.icon-box-team {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   background-color: #4d5ae5;
+    fill: #f4f4fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-box-footer {
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center; 
-
+  justify-content: center;
+  position: relative;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-box-footer,
-.icon-box-footer {
-  background-color: #404bbf; /* новий колір при наведенні */
-}
-.social-linl:hover,
-.social-linl:focus {
-  background-color: #404bbf; /* новий колір при наведенні */
-}
+
+
+
 
 .our-team-info {
   background-color: #ffffff;
@@ -472,11 +507,114 @@ a {
   margin-bottom: 8px;
 }
 
-.footer-container{
+
+/*--> Footer <--*/
+
+.page-footer {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+align-items: flex-start;
+
+  justify-content: flex-start; /* блоки один за одним */
+  gap: 120px; /* відстань між блоками */
+  max-width: 1200px; /* по центру можна додати margin auto */
+  margin: 0 auto;
+}
+
+/* Лівий блок */
+.footer-box {
+  max-width: 264px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4d5ae5;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-logo .webstudio {
+  color: #f4f4fd;
+}
+
+.footer-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f4f4fd;
+}
+
+/* Правий блок (соцмережі) */
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social-items {
+}
+
+.social-linl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-linl:hover,
+.social-linl:focus {
+  background-color: #404bbf;
+}
+
+.footer-icon {
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
+}
+
+
+
+
+
+
+
+
+
+
+/*.footer-container{
   display: flex; 
   align-items: baseline;
   margin-right: 120px;
-  
 }
 
 .page-footer {
@@ -486,11 +624,15 @@ a {
   gap: 120px;
   padding-top: 100px;
   padding-bottom: 100px;
+  
 }
 
 .footer-box {
   width: 264px;
   height: 112px;
+   display: flex; 
+  align-items: baseline;
+  margin-right: 120px;
 }
 .footer-logo {
   display: inline-block;
@@ -519,7 +661,7 @@ a {
   width: 208px;
   height: 80px;
   display: flex;
-  flex-direction: column; /* текст зверху, іконки знизу */
+  flex-direction: column; /* текст зверху, іконки знизу 
   align-items: start;
   justify-content: space-between;
 }
@@ -532,6 +674,7 @@ a {
   color: #fff;
   margin-bottom: 16px;
 }
+
 
 .social-list {
   display: flex;
