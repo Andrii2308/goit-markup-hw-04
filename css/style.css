@@ -55,10 +55,8 @@ a {
   padding-bottom: 24px;
   margin-right: 76px;
 }
-.header-menu-links.current {
-  position: relative;
-}
-.header-menu-links.current::after {
+
+.header-menu-links::after {
   content: "";
 
   bottom: -1px;
@@ -69,7 +67,17 @@ a {
 
   background-color: #404bbf;
   border-radius: 2px;
+  opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
+.header-menu-links:hover::after,
+.header-menu-links:focus::after,
+.header-menu-links.current::after {
+  opacity: 1;
+
+}
+
 
 .header-logo-italik {
   font-family: "Raleway", sans-serif;
@@ -99,6 +107,7 @@ a {
   padding-top: 24px;
   padding-bottom: 24px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   position: relative;
 }
 
 .header-address {
